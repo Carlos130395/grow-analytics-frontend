@@ -1,0 +1,31 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Asegúrate de que no haya scroll */
+}
+
+.login-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%; /* Limitar la altura para evitar desbordamientos */
+}
+
+.login-form-container {
+  flex: 1;
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+img {
+  max-width: 90%;
+  max-height: 80vh; /* Limitar la altura máxima */
+  height: auto;
+  object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+}

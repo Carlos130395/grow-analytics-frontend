@@ -1,0 +1,33 @@
+/* Estilo para el contenedor principal */
+.usuario-page-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo claro */
+  min-height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Título de la página */
+.usuario-page-container h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Contenedor de la tabla */
+.usuario-table-container {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para enlaces de acción (Editar y Eliminar) */
+.usuario-action-link {
+  color: #1890ff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.usuario-action-link:hover {
+  text-decoration: underline;
+}

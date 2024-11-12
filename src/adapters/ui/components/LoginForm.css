@@ -1,0 +1,32 @@
+.login-container {
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.social-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-login button {
+  margin: 0 5px;
+  font-size: 24px; /* Ajusta el tamaño de los íconos */
+}
+
+a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

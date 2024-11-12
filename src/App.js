@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import LoginPage from "./adapters/routes/LoginPage";
+import UsuarioPage from "./adapters/routes/UsuarioPage";
+import "./adapters/ui/components/LoginForm.css"; // Para agregar estilos básicos
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />{" "}
+        {/* Redirige la raíz */}
+        <Route path="/login" element={<LoginPage />} />{" "}
+        {/* Ruta para el login */}
+        <Route path="/usuario" element={<UsuarioPage />} />{" "}
+        {/* Ruta para el Usuario */}
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
